@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+/*
+	Team Project 1
+	Author: Carol Ann Killeen
+	Date: 7/15/19
+	Filename: TP1_layout.css
+*/
+
+p#time2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+p#time {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Images on hours page */
+
+img#pizza {
+	width: 100%;
+	height: 100%;
+}
+
+/* hours page */
+dt#day {
+	font-size: 25px;
+	text-align: center;
+}
+
+dd#day2 {
+	font-size: 15px;
+	text-align: center;
+}
+
+p#day3 {
+	font-size: 20px;
+	text-align: center;
+}
+
+p#day4 {
+	font-size: 13px;
+	text-align: center;
+}
+
+/* Style for font icons */
+.fa {
+  padding: 0px;
+  font-size: 80px;
+  width: 0px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border-right-color: black;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  color: red;
+}
+
+/* Set a specific color for each brand */
+#app {
+	font-size: 30px;
+	font-family: 'Great Vibes', cursive;
+}
+
+#info {
+	font-size: 30px;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: white;
+}
+
+/* Snapchat */
+.fa-snapchat {
+  background: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: white;
+  border: 5px 5px;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: white;
+  border: 5px 5px;
+}
+
+/* Pinterest */
+.fa-pinterest {
+  background: white;
+  border: 5px 5px;
+}
+
+/* Base layout styles used by mobile devices up to 480px */
+
+html {
+	height: 100%;
+	font-size: 10px;
+}
+
+img#food {
+	max-width: 5%;
+	max-height: 5%;
+}
+
+img {
+	max-width: 100%;
+}
+
+object {
+	max-width: 100%;
+}
+
+embed {
+	max-width: 100%;
+}
+
+video {
+	max-width: 100%;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 5%;
+	padding-right: 5%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+
+nav {
+	width: 25%;
+	float: left;
+	margin: 6% 2% 0% 0%;
+}
+
+article {
+	width: 73%;
+	float: left;
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+nav ul li {
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+	font-size: 0.8em;
+}
+
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8%;
+}
+
+nav ul li a:visited {
+	color: #222;
+}
+
+nav ul li a:hover {
+	background-color: #222;
+	color: white;
+}
+
+nav ul li a:focus {
+	outline: thin dotted;
+}
+
+nav ul li a:hover, nav ul li a:active {
+	outline: 0;
+}
+
+body h1 {
+	margin: 1%;
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+	font-size: 1.5em;
+}
+
+body article h1 {
+	font-size: 1.15em;
+}
+
+header img {
+	float: none;
+	width: 96%;
+	margin: 2% 2% 0% 2%;
+}
+
+body p, body address {
+	margin: 3.5% 1%;
+	font-size: 1em;
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+	font-style: normal;
+	height: 100%;
+}
+
+dl {
+	margin-left: 2%;
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+}
+
+dt {
+	display: block;
+	margin: 0;
+	text-indent: 0;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(168, 168, 168,1.00);
+}
+
+dd {
+	display: block;
+	margin: 0 0 3% 3%;
+	text-indent: 0;
+}
+
+blockquote {
+	font-size: 1em;
+	width: 100%;
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+	margin: 0 0 4% 0;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px solid rgba(128,98,26,1.00);
+	font-family: 'Dancing Script', 'Pacifico', 'Caveat', cursive;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+blockquote p:last-of-type {
+	border-top: 1px solid rgba(128,98,26,1.00);
+	text-align: right;
+	font-size: 1em;
+}
+
+q {quotes: "\201C" "\201D" "\2018" "\2019";}
+q:before {content:open-quote;}
+q:after {content:close-quote;}
+article p, article address {font-family: "Times New Roman", Times, serif;}
+
+/* Tablet layout styles used by devices 481px to 768px */
+
+@media only screen and (min-width: 481px) {
+html, body {
+	font-size: 16px;
+}
+
+body {
+	width: 89.9%;
+	padding-left: 1.55%;
+	padding-right: 1.55%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+header h1 {
+   font-size: 2.2em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	width: 94%;
+	float: none;
+	margin: 0px auto;
+}
+
+dl {
+	width: 90%;
+    margin: 0 auto;
+	text-align: left;
+}
+
+article img {
+	float: right;
+	width: 40%;
+	margin: 0% 2% 2% 2%;
+}
+
+article img#left {
+	float: left;
+	width: 40%;
+	margin: 0% 2% 2% 2%;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+
+nav ul li a {
+	margin-bottom: 0;
+}
+
+nav {
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+	float: none;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li:last-of-type {
+	margin-right: 0%;
+}
+
+img#review {
+	width: 100%;
+	background-image: cover
+}
+
+blockquote {
+  background: rgb(170, 164, 224);
+  border-left: 10px solid rgba(176,124,48,0.5);
+  quotes: "\201C""\201D""\201C""\2019";
+  	border-radius: 20%;
+	width: 40%;
+	margin: 1%;
+	float: left;
+	padding: 2%;
+}
+
+blockquote p:first-of-type:before {
+  color: rgba(176,124,48,0.50);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin: 0.2em 0.1em 0em 0.25em;
+  vertical-align: -0.4em;
+  float: left;
+}
+
+footer {
+	font-size: 0.9em;
+}
+
+}
+
+/* Desktop layout styles used by  devices
+	769px and larger. */
+
+@media only screen and (min-width: 769px) {
+html, body {
+	font-size: 20px;
+}
+
+html {
+	background-color: rgba(176,124,48,1.00);
+	margin: 0px auto;
+}
+
+body {
+	width: 88.2%;
+	max-width: 900px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	background-color: white;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px, 
+	rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px, 
+	rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,
+	rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+}
+
+img#social {
+	width: 15%;
+	height: 15%;
+}
+
+img#start {
+	width: 100%;
+	height: 100%;
+}

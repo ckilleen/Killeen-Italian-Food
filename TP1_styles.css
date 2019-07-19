@@ -1,0 +1,118 @@
+/*
+	Team Project 1
+	Author: Carol Ann Killeen
+	Date: 7/15/19
+	Filename: TP1_styles.css
+*/
+
+html {
+   background: rgb(62, 61, 100) url(Images/pattern.jpeg);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+               inset rgb(51, 21, 21) 0px 0px 40px;
+   border-left: 3px solid rgb(51, 51, 51);
+   border-right: 3px solid rgb(51, 51, 51);
+   min-height: 100%;  
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1020px;  
+   width: 100%;
+}
+
+
+header {
+   background: linear-gradient(to bottom, white 70%, rgb(62, 61, 100));
+   border-bottom: 1px solid rgb(0, 0, 0);
+   color: white;
+}
+
+
+
+/* Navigation list styles */
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(217, 61, 100);
+}
+
+a#navicon {
+   display: none;
+}
+
+
+section {
+   margin: 30px 3%;
+}
+
+section p {
+   line-height: 1.4em;
+   margin: 15px 0px;
+}
+
+/* Mobile Styles: 0px to 640px */
+
+@media only screen and (max-width: 640px) {
+
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+}
+
+/* Tablet and Desktop Styles: greater than 640px */
+
+@media only screen and (min-width: 641px) {
+
+   body header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
